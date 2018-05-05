@@ -1,5 +1,3 @@
-# Script: 
-
 <?php
 
 	# Path to the password file
@@ -9,7 +7,4 @@
 	echo "The Pass for natas13:" . $array[0];
 	
 ?>
-
-# Script.min:
-<?php echo "<br/>natas13:" . explode("\n", file_get_contents("/etc/natas_webpass/natas13"))[0] . "<br/>";?>
 
