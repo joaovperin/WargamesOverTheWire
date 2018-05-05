@@ -2,3 +2,7 @@
 
 	# PHP Engine used:
 	http://sandbox.onlinephpfunctions.com/
+
+	# Edits the comment section of a jpg file. So you can put php code and rename it to .php and make the server execute that :D
+        jhead -cs "<?php echo 'Hello from the Hacker' ?>"  tst.jpg 
+

